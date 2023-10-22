@@ -2,7 +2,7 @@
 
 ![Cartoonifier Image](./background.PNG)
 
-**Dynamic Cartoon Image Processing Platform** is a web-based application designed to transform images into cartoon-styled versions. It is built with Flask, Python, and OpenCV, providing users with an interactive experience and offering various features to enhance and personalize the cartoon effect.
+This free cartoonifier is a web-based application designed to transform images into cartoon-styled versions. It is built with Flask, Python, and OpenCV, providing users with an interactive experience and offering various features to enhance and personalize the cartoon effect.
 
 ## Features
 
