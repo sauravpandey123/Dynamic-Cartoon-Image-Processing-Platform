@@ -1,0 +1,238 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Comic Sans MS"; 
+	color: #333;
+	overflow-x: auto;
+
+}
+
+
+
+header {
+	 background-color: #a0d2eb;
+	color: #333;
+	padding: 5px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+
+/*	justify-content: center;*/
+}
+
+nav ul li a {
+	color: #333;
+	text-decoration: none;
+/*	padding: 5px;*/
+	transition: all 0.1s ease-in-out;
+font-family: 'Fredericka the Great', cursive;
+}
+
+nav ul li a:hover {
+	background-color: #333;
+	color: #fff;
+	border-radius: 5px;
+}
+
+
+li{
+	margin-left: 30px;
+	margin-right: 80px;
+	font-weight: bolder;
+	font-size: 1.5rem;
+}
+
+nav li:hover{
+	transform: scale(1.5);
+}
+
+.hero-image {
+	min-height: 100vh;
+	background: #0c192c;
+}
+
+
+/*BUBBLES DESIGN STARTS BELOW*/
+
+.container
+{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	/* overflow: hidden; */
+	background: #0c192c;
+}
+
+.bubbles{
+	position: relative;
+	display: flex;
+}
+
+.bubbles span{
+	position: relative;
+	width: 20px;
+	height: 20px;
+	background: #4fc3dc;
+	margin: 0 8px;
+	border-radius: 50%;
+	box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+	animation: animate 15s linear infinite;
+	animation-duration: calc(125s/var(--i));
+}
+
+.bubbles span:nth-child(even)
+{
+	background: #ff2d75;
+	box-shadow: 0 0 0 10px #ff2d7544, 0 0 50px #ff2d75, 0 0 100px #ff2d75;
+}
+
+@keyframes animate
+{
+  0%
+  {
+    transform: translateY(100vh) scale(0);
+  }
+  100%
+  {
+    transform: translateY(-5vh) scale(0.5);
+  }
+}
+
+/*BUBBLE ENDS HERE*/
+
+
+/*BUTTON STYLING BELOW*/
+
+.cool-button {
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #4fc3dc;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px 0 #3cb4d8;
+  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+  cursor: pointer;
+  outline: none;
+  margin-bottom:30px;
+}
+
+.cool-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 0 #3cb4d8;
+}
+
+.cool-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/*BUTTON STYLING ENDS*/
+
+
+.hero-text {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: #fff;
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 20px;
+
+}
+
+h1{
+	font-family: "Comic Sans MS"; 
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+  }
+
+.pictures{      
+    display: flex;
+    justify-content: space-evenly;
+}
+
+  .pictures .middle{
+    align-self: center;
+  }
+
+.image{
+    border: 3px solid yellowgreen;
+    transition: all 0.5s;
+	max-width: 44%; /* adjust this value as needed */
+    height: auto;
+}
+
+h2{
+    text-align: center;
+    text-decoration: solid;
+    font-weight: bold;
+    color: yellowgreen;
+    font-size: 35px;
+}
+
+img:hover{
+	transform: scale(1.05);
+}
+
+.venmo{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.align-button{
+    display:flex;
+    justify-content: center;
+}
+
+.space-at-end{
+    margin-top:20px;
+}
+
+/* Brightness feature */
+.brightness-align{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	color: white;
+	font-size: 25px;
+}
+
+#brightness{
+	margin: 2rem;
+	/* margin-bottom:0px; */
+	width: 20%;
+}
+
+/* Download  */
+
+.download-btn {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	padding: 11px 22px;
+	border-radius: 8px;
+	cursor: pointer;
+	transition-duration: 0.4s;
+	margin: 2rem;
+  }
+  
+.download-btn:hover {
+background-color: #45a049;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+  

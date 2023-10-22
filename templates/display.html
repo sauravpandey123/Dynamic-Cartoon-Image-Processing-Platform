@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<title>Converted Image</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style2.css') }}">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Poppins:wght@400;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+</head>
+<body class="container">
+	<main>
+      <h2>"Made" Cartoons Great Again!</h2>
+				<div class="bubbles">
+					<span style="--i:21;"></span>
+					<span style="--i:12;"></span>
+					<span style="--i:23"></span>
+					<span style="--i:11"></span>
+					<span style="--i:19"></span>					
+					<span style="--i:26"></span>
+					<span style="--i:13"></span>
+					<span style="--i:15"></span>
+					<span style="--i:14"></span>
+					<span style="--i:17"></span>
+					<span style="--i:16"></span>
+					<span style="--i:18"></span>
+					<span style="--i:11"></span>
+					<span style="--i:19"></span>
+					<span style="--i:12"></span>
+					<span style="--i:28"></span>
+					<span style="--i:19"></span>
+					<span style="--i:10"></span>
+					<span style="--i:12"></span>
+					<span style="--i:17"></span>
+					<span style="--i:21;"></span>
+					<span style="--i:12;"></span>
+					<span style="--i:23"></span>
+					<span style="--i:11"></span>
+					<span style="--i:19"></span>					
+					<span style="--i:26"></span>
+					<span style="--i:13"></span>
+					<span style="--i:15"></span>
+					<span style="--i:14"></span>
+					<span style="--i:17"></span>
+					<span style="--i:16"></span>
+					<span style="--i:18"></span>
+					<span style="--i:11"></span>
+					<span style="--i:19"></span>
+					<span style="--i:12"></span>
+					<span style="--i:28"></span>
+					<span style="--i:19"></span>
+					<span style="--i:10"></span>
+					<span style="--i:12"></span>
+					<span style="--i:17"></span>
+																																		
+				</div>
+        <section class="pictures">
+          <img src="{{ source1 }}" class="image" id="original">
+          <img src = "/static/arrow.png" width="120" height="80" class="middle">
+          <img src="{{ source2 }}" class="image" id="converted">
+        </section>
+		<div class="brightness-align">
+			<p> Brightness: </p>
+			<input id="brightness" type="range" min="-10" max="10" value="0">
+			<button class="download-btn" id="download-btn">Grab a copy! </button>
+
+		</div>
+        <p class="venmo">Thank you for using this service. If you would like to make a donation, please venmo @Saurav-Pandey-1</p>
+        
+        <div class="align-button">
+          <a href="http://127.0.0.1:5000/"><button class="cool-button">TRY AGAIN!</button></a>
+        </div>
+		
+
+  </main>
+  <script src="{{ url_for('static', filename='script2.js') }}"></script>
+
+</body>
+</html>

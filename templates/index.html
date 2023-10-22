@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>My Website</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Poppins:wght@400;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+	<header>
+		<nav class="topnav">
+			<a class="active" href="/">Home</a>
+			<a href="#about">About</a>
+			<a href="mailto:pandey1@kenyon.edu">Contact</a>
+		</nav>
+	</header>
+
+	<main>
+		<div class="container">
+			<div class="bubbles">
+				<span style="--i:21;"></span>
+				<span style="--i:12;"></span>
+				<span style="--i:23"></span>
+				<span style="--i:11"></span>
+				<span style="--i:19"></span>
+				<span style="--i:26"></span>
+				<span style="--i:13"></span>
+				<span style="--i:15"></span>
+				<span style="--i:14"></span>
+				<span style="--i:17"></span>
+				<span style="--i:16"></span>
+				<span style="--i:18"></span>
+				<span style="--i:11"></span>
+				<span style="--i:19"></span>
+				<span style="--i:12"></span>
+				<span style="--i:28"></span>
+				<span style="--i:19"></span>
+				<span style="--i:10"></span>
+				<span style="--i:12"></span>
+				<span style="--i:17"></span>
+				<span style="--i:21;"></span>
+				<span style="--i:12;"></span>
+				<span style="--i:23"></span>
+				<span style="--i:11"></span>
+				<span style="--i:19"></span>
+				<span style="--i:26"></span>
+				<span style="--i:13"></span>
+				<span style="--i:15"></span>
+				<span style="--i:14"></span>
+				<span style="--i:17"></span>
+				<span style="--i:16"></span>
+				<span style="--i:18"></span>
+				<span style="--i:11"></span>
+				<span style="--i:19"></span>
+				<span style="--i:12"></span>
+				<span style="--i:28"></span>
+				<span style="--i:19"></span>
+				<span style="--i:10"></span>
+				<span style="--i:12"></span>
+				<span style="--i:17"></span>
+
+			</div>
+			<form id="upload-form" enctype="multipart/form-data">
+				<div class="hero-text">
+					<h1 class="webpage-title">MAKE CARTOONS GREAT AGAIN!</h1>
+					<p class="transform">Transform your photos into a wacky world of cartoons! Give your creativity a boost with our
+						Cartoonifier - just hit that magical button below and watch the magic happen. It's time to bring
+						your wildest imagination to life!</p>
+					<input type="file" id="file-input" style="display:none" accept="image/*">
+					<div class="sample-pictures">
+						<img src="static/left.png" width="182px" height="218px">
+						<img src="static/arrow.png" width="90px" height="60px" class="arrow">
+						<img src="static/right.png" width="182px" height="218px">
+					</div>
+					<div class="slider-wrapper">
+						<div class="slider-container">
+							<input id="colorquant" type="range" min="2" max="18" value="9">
+							<p class="aligninput">Cartoon-O-Meter</p>
+						</div>
+						<div class="checkbox-container">
+							<input type="checkbox" id="checkbox" class="checkbox-label" value="off">
+							<p class="aligninput">Blur Boost</p>
+						</div>
+						<input type="submit" id="try" class="cool-button" value="TRY IT NOW">
+
+					</div>
+					
+				</div>
+			</form>
+		</div>
+
+		
+		<div class="about about-style" id="about">
+			<h1> About</h1>
+			<h3>This product is a 'cartoonifier' that converts images into their cartoon forms. It belongs to Saurav
+			Pandey, Kenyon College Class of 2023
+			</h3>
+			<br>
+			<footer class="about about-style">
+				<p>&copy; 2023 Saurav Pandey</p>
+			</footer>
+		</div>
+
+	</main>
+	<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
