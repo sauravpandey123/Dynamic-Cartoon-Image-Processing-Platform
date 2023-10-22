@@ -25,7 +25,8 @@
    pip install -r requirements.txt
 
 4. Run the app
-   ```python app.py
+   ```bash
+   python app.py
 
 5. Open your browser and navigate to http://127.0.0.1:5000/ to access the platform.
 
